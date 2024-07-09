@@ -6,14 +6,14 @@
         <source> hello </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/hello/hello.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="placeholder-example" datatype="html">
         <source>Placeholder</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/internationalization-in-attributes/internationalization-in-attributes.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pluralization-example" datatype="html">
@@ -30,14 +30,14 @@
           <context context-type="linenumber">4,6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="id" datatype="html">
-        <source> hello </source>
+      <trans-unit id="id_here" datatype="html">
+        <source> Different parts of translation </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/parts-of-translation/parts-of-translation.component.html</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="linenumber">10,13</context>
         </context-group>
-        <note priority="1" from="description">description</note>
-        <note priority="1" from="meaning">meaning</note>
+        <note priority="1" from="description">description here </note>
+        <note priority="1" from="meaning">meaning here</note>
       </trans-unit>
     </body>
   </file>

@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
 
+  code = `<div i18n="@@helloMessage"> hello </div>`
+
 }

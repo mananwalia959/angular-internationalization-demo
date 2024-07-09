@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './internationalization-in-attributes.component.scss'
 })
 export class InternationalizationInAttributesComponent {
+  code = `<input i18n-placeholder= "@@placeholder-example" placeholder = "Placeholder" />`
 
 }
