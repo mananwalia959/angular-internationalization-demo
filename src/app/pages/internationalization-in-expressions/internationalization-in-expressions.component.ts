@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class InternationalizationInExpressionsComponent {
 
+  minutes=0;
+
+  add(num: number){
+    this.minutes = this.minutes + num
+  }
+
 }

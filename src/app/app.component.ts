@@ -11,16 +11,6 @@ import { log } from 'console';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  alertMessage = 'internationalization-demo';
 
-  minutes=0;
 
-  alertDialog(){
-    console.log("here")
-    alert(this.alertMessage)
-  }
-
-  add(num: number){
-    this.minutes = this.minutes + num
-  }
 }

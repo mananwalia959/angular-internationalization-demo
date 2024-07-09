@@ -5,32 +5,39 @@
       <trans-unit id="helloMessage" datatype="html">
         <source> hello </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">3,6</context>
+          <context context-type="sourcefile">src/app/pages/hello/hello.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="id" datatype="html">
-        <source> hello </source>
+      <trans-unit id="placeholder-example" datatype="html">
+        <source>Placeholder</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">7,11</context>
+          <context context-type="sourcefile">src/app/pages/internationalization-in-attributes/internationalization-in-attributes.component.html</context>
+          <context context-type="linenumber">1</context>
         </context-group>
-        <note priority="1" from="description">description</note>
-        <note priority="1" from="meaning">meaning</note>
       </trans-unit>
       <trans-unit id="pluralization-example" datatype="html">
         <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{ minutes }} minutes ago}}" xid="1887283401472369100"/></source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">15,18</context>
+          <context context-type="sourcefile">src/app/pages/internationalization-in-expressions/internationalization-in-expressions.component.html</context>
+          <context context-type="linenumber">4,6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2002272803511843863" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">15,18</context>
+          <context context-type="sourcefile">src/app/pages/internationalization-in-expressions/internationalization-in-expressions.component.html</context>
+          <context context-type="linenumber">4,6</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="id" datatype="html">
+        <source> hello </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/parts-of-translation/parts-of-translation.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">description</note>
+        <note priority="1" from="meaning">meaning</note>
       </trans-unit>
     </body>
   </file>
