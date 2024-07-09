@@ -1,1 +1,39 @@
+<nav>
+    <ul>
+      <li><a routerLink="" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="parts-of-translation-unit" routerLinkActive="active">Parts of Translation Unit</a></li>
+      <li><a routerLink="localize-from-js" routerLinkActive="active">Localize from JS</a></li>
+      <li><a routerLink="localize-from-expressions" routerLinkActive="active">Localize from Expressions</a></li>
+      <li><a routerLink="localize-in-attributes" routerLinkActive="active">Localize in Attributes</a></li>
+    </ul>
+  </nav>
+
+
+
+
+<h3> Simplest example </h3>
 <div i18n="@@helloMessage"> hello </div>
+
+<hr>
+<h3> What are the differet parts of the translation </h3>
+<div i18n="meaning|description@@id"> hello </div>
+
+
+<hr>
+<h3> How to translate js code variables like alerts, For ex: <button (click)="alertDialog()" > Click here </button> </h3>
+<hr>
+<div>Other niche examples</div>
+<button type="button" (click)="add(1)">+</button> <button type="button" (click)="add(-1)">-</button>
+<div i18n="@@pluralization-example">Updated {minutes, plural, =0 {just now} =1 {one minute ago} other {{{ minutes }} minutes ago}}</div>
+
+<div> examples at <a href="https://angular.dev/guide/i18n">https://angular.dev/guide/i18n </a> </div>
+
+<div>Some insights</div>
+<p> Curly braces vs single braces </p>
+
+<router-outlet></router-outlet>
+
+<hr>
+
+
+
