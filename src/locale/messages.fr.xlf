@@ -4,6 +4,7 @@
     <body>
       <trans-unit id="helloMessage" datatype="html">
         <source> hello </source>
+        <target> bonjour </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/hello/hello.component.html</context>
           <context context-type="linenumber">11,12</context>
@@ -11,6 +12,7 @@
       </trans-unit>
       <trans-unit id="placeholder-example" datatype="html">
         <source>Placeholder</source>
+        <target> espace réservé </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/internationalization-in-attributes/internationalization-in-attributes.component.html</context>
           <context context-type="linenumber">12</context>
@@ -25,6 +27,8 @@
       </trans-unit>
       <trans-unit id="2002272803511843863" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
+        <target>{VAR_PLURAL, plural, =0 {tout à l' heure} =1 {il y a une minute} other {<x id="INTERPOLATION"/> il y a quelques minutes}}</target>
+
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/internationalization-in-expressions/internationalization-in-expressions.component.html</context>
           <context context-type="linenumber">6,8</context>
@@ -32,6 +36,7 @@
       </trans-unit>
       <trans-unit id="AlertMessageDescription" datatype="html">
         <source>Alert message</source>
+        <target> Message d'alerte </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/localize-from-js/localize-from-js.component.ts</context>
           <context context-type="linenumber">12</context>
@@ -41,6 +46,7 @@
       </trans-unit>
       <trans-unit id="id_here" datatype="html">
         <source> Different parts of translation </source>
+        <target> Différentes parties de traduction </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/parts-of-translation/parts-of-translation.component.html</context>
           <context context-type="linenumber">10,13</context>
