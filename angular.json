@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "internationalization-demo": {
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": true,
             "outputPath": "dist/internationalization-demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -59,6 +66,12 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr": {
+             "localize": ["fr"]
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -71,6 +84,12 @@
             },
             "development": {
               "buildTarget": "internationalization-demo:build:development"
+            },
+            "fr": {
+              "buildTarget": "internationalization-demo:build:fr"
+            },
+            "en": {
+              "buildTarget": "internationalization-demo:build:en"
             }
           },
           "defaultConfiguration": "development"
