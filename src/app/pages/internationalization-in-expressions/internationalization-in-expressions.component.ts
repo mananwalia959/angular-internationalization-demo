@@ -9,10 +9,14 @@ import { Component } from '@angular/core';
 })
 export class InternationalizationInExpressionsComponent {
 
+
   minutes=0;
 
   add(num: number){
     this.minutes = this.minutes + num
   }
+
+  code = `<div i18n="@@pluralization-example">Updated {minutes, plural, =0 {just now} =1 {one minute ago} other {{{ minutes }} minutes ago}}</div>
+`
 
 }

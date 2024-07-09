@@ -9,11 +9,21 @@ import { Component } from '@angular/core';
 })
 export class LocalizeFromJsComponent {
 
-  alertMessage = 'internationalization-demo';
+  alertMessage = $localize`:Alert message|Description for alert message@@AlertMessageDescription:Alert message`;
+
+
 
   
   alertDialog(){
     alert(this.alertMessage)
   }
+
+  code = `<button (click)="alertDialog()" > Click here </button>`;
+  codeJs = `alertMessage = $localize\`:Alert message|Description for alert message@@AlertMessageDescription:Alert message\`;`;
+
+  codeJsFunction = 
+  `alertDialog(){
+    alert(this.alertMessage)
+  }`
 
 }

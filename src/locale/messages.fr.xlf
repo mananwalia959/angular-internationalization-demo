@@ -4,11 +4,49 @@
     <body>
       <trans-unit id="helloMessage" datatype="html">
         <source> hello </source>
-        <target> bonjour </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/pages/hello/hello.component.html</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="placeholder-example" datatype="html">
+        <source>Placeholder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/internationalization-in-attributes/internationalization-in-attributes.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pluralization-example" datatype="html">
+        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{ minutes }} minutes ago}}" xid="1887283401472369100"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/internationalization-in-expressions/internationalization-in-expressions.component.html</context>
+          <context context-type="linenumber">6,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2002272803511843863" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/internationalization-in-expressions/internationalization-in-expressions.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AlertMessageDescription" datatype="html">
+        <source>Alert message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/localize-from-js/localize-from-js.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Description for alert message</note>
+        <note priority="1" from="meaning">Alert message</note>
+      </trans-unit>
+      <trans-unit id="id_here" datatype="html">
+        <source> Different parts of translation </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/parts-of-translation/parts-of-translation.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+        <note priority="1" from="description">description here </note>
+        <note priority="1" from="meaning">meaning here</note>
       </trans-unit>
     </body>
   </file>
